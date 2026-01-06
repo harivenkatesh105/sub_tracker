@@ -43,7 +43,7 @@ public class DataSyncWorker extends Worker {
         Context context = getApplicationContext();
 
         SharedPreferences prefs = context.getSharedPreferences("UserSession", Context.MODE_PRIVATE);
-        String userEmail = prefs.getString("user_email", "unknown@gmail.com");
+        String userEmail = prefs.getString("user_email", "ram@gmail.com");
 
         if (userEmail.equals("unknown@gmail.com")) {
             System.out.println("⚠️ Worker: No Email found. Skipping sync.");
